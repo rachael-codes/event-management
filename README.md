@@ -14,7 +14,7 @@ As an event organizer, I want to create and manage events, handle attendee regis
 ## Follow the steps below to get started with the project:
 
 1. Clone the repository: `git clone <repository-url>`
-2. Navigate to the project directory: `cd project10`
+2. Navigate to the project directory: `cd event-management`
 3. Install the project dependencies: `npm install`
 4. Open XAMPP and start the apache and mysql servers.
 5. Replace the placeholder values with your own configuration: DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE and PORT.
