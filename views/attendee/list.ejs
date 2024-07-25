@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendee List</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Attendee List</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% attendees.forEach(attendee => { %>
+          <tr>
+            <td><%= attendee.name %></td>
+            <td><%= attendee.email %></td>
+            <td>
+              <!-- Add any actions or buttons for each attendee here -->
+              <a href="/attendees/<%= attendee.id %>" class="btn btn-primary">View</a>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <p class="mt-3"><a href="/attendees/register" class="btn btn-success">Register Attendee</a></p>
+  </div>
+
+</body>
+</html>

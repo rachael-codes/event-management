@@ -1,0 +1,29 @@
+<!-- views/event/details.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Details</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Event Details</h1>
+    
+    <h2><%= event.name %></h2>
+    <p><strong>Date:</strong> <%= event.date %></p>
+    <p><strong>Location:</strong> <%= event.location %></p>
+    <p><strong>Description:</strong> <%= event.description %></p>
+    <p><strong>Capacity:</strong> <%= event.capacity %></p>
+    
+    <p class="mt-3">
+      <a href="/events" class="btn btn-secondary">Back to Event List</a>
+    </p>
+  </div>
+
+  <!-- Include Bootstrap JS and jQuery (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
