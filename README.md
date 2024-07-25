@@ -1,4 +1,4 @@
-# Project 10: Event Management
+# Event Management
 
 ## User Story: 
 As an event organizer, I want to create and manage events, handle attendee registrations, and provide event-related information to participants.
